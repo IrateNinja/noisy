@@ -1,0 +1,1 @@
+require 'noisy/noisy'
