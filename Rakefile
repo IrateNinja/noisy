@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "noisy"
   gem.homepage = "http://github.com/gdcbyers/noisy"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Perlin Noise generation for Ruby}
+  gem.description = %Q{Gem to allow easy generation of perlin noise}
   gem.email = "geoff@seaandco.com"
   gem.authors = ["Geoffrey Byers"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
