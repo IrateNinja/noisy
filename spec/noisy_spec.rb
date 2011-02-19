@@ -128,24 +128,4 @@ describe 'Noisy::Noisy' do
       a.count.should == a.first.count
     end
   end
-
-  describe '#generate_plot' do
-    it 'generates an image representing one dimensional perlin noise plotted on an x,y graph' do
-      fileName = 'test-plot-' + (1 + rand(100)).to_s + '.png'
-      @noisy.generate_plot(10, 10, fileName)
-      File.exist?(fileName).should == true
-      File.delete(fileName) if File.exist?(fileName)
-    end
-  end
-
-  describe '#generate_map' do
-    it 'generates an image representing two dimensional perlin noise plotted on an x,y graph' do
-      fileName = 'test-plot-' + (1 + rand(100)).to_s + '.png'
-      @noisy.generate_map(10, 10, fileName)
-      File.exist?(fileName).should == true
-      File.delete(fileName) if File.exist?(fileName)
-    end
-  end
-
-
 end

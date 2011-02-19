@@ -1,5 +1,3 @@
-require 'RMagick'
-
 module Noisy
   class Noisy
     def initialize(seed = 1, octaves = 4)
@@ -85,43 +83,5 @@ module Noisy
       end
       noise
     end
-
-    # Make Images
-    def generate_plot(width, height, fileName = 'plot.png')
-      scale = 10.0
-      half_h = height / 2.0
-      img = Magick::Image.new(width, height)
-      draw = Magick::Draw.new
-      draw.pointsize(1)
-
-      (0...width).each do |x|
-        y = perlin_noise(x / scale) * half_h + half_h
-        draw.point(x, y)
-      end
-
-      draw.draw(img)
-      img.write(fileName)
-    end
-
-    def generate_map(width, height, fileName = 'map.png')
-      scale = 10.0
-      half_h = height / 2.0
-      img = Magick::Image.new(width, height)
-      draw = Magick::Draw.new
-      draw.fill('black')
-      draw.pointsize(1)
-
-      (0...width).each do |x|
-        (0...height).each do |y|
-          n = perlin_noise_2d(x / scale, y / scale)
-          draw.fill_opacity((n + 1) / 2)
-          draw.point(x, y)
-        end
-      end
-
-      draw.draw(img)
-      img.write(fileName)
-    end
-
   end
 end
