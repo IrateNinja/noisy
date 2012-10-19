@@ -1,6 +1,19 @@
-= noisy
+= Noisy Gem
 
 Gem to allow easy generation of perlin noise
+
+  gem install noisy
+
+
+= Usage
+
+  seed = 1234
+  x    = 1
+  y    = 2
+
+  n = Noisy::Noisy.new(seed)
+  v = n.perlin_noise_2d(x, y)
+
 
 == License
 

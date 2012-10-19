@@ -1,9 +1,9 @@
 module Noisy
   class Noisy
-    def initialize(seed = 1, octaves = 4)
+    def initialize(seed = 1, octaves = 4, persistence = 0.25)
       @seed = seed
       @octaves = octaves
-      @persistence = 0.25
+      @persistence = persistence
     end
 
     def raw_noise(x)

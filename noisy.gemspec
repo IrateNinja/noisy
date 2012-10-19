@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{noisy}
-  s.version = "0.1.0"
+  s.name = "noisy"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Geoffrey Byers"]
-  s.date = %q{2011-02-19}
-  s.description = %q{Gem to allow easy generation of perlin noise}
-  s.email = %q{geoff@seaandco.com}
+  s.date = "2011-10-30"
+  s.description = "Gem to allow easy generation of perlin noise"
+  s.email = "geoff@seaandco.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -31,11 +31,11 @@ Gem::Specification.new do |s|
     "spec/noisy_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/gdcbyers/noisy}
+  s.homepage = "http://github.com/gdcbyers/noisy"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.0}
-  s.summary = %q{Perlin Noise generation for Ruby}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Perlin Noise generation for Ruby"
   s.test_files = [
     "spec/noisy_spec.rb",
     "spec/spec_helper.rb"
